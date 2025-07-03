@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-section input,
+.input-section select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #007bff;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+  background: #d4edda;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-controls button {
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+  }
+}
